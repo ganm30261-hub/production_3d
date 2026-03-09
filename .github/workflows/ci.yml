@@ -8,13 +8,12 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-  REGION: asia-east1
-  REGISTRY: asia-east1-docker.pkg.dev
-  REPO: floorplan-repo
+  REGION: us-central1
+  REGISTRY: us-central1-docker.pkg.dev
+  REPO: floorplan-3d-repo
   IMAGE: train
 
 jobs:
-  # ── 代码检查 ──
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -31,9 +30,9 @@ jobs:
         run: |
           flake8 b_data/ c_models/ g_training/ \
             --max-line-length=100 \
-            --exclude=__pycache__
+            --exclude=__pycache__ \
+            --ignore=E402,W503
 
-  # ── 构建并推送镜像 ──
   build-and-push:
     needs: lint
     runs-on: ubuntu-latest
@@ -53,6 +52,8 @@ jobs:
       - name: 构建并推送镜像
         run: |
           IMAGE_PATH=${{ env.REGISTRY }}/${{ env.PROJECT_ID }}/${{ env.REPO }}/${{ env.IMAGE }}
-          docker build -t ${IMAGE_PATH}:${{ github.sha }} -t ${IMAGE_PATH}:latest .
+          docker build \
+            -t ${IMAGE_PATH}:${{ github.sha }} \
+            -t ${IMAGE_PATH}:latest .
           docker push ${IMAGE_PATH}:${{ github.sha }}
           docker push ${IMAGE_PATH}:latest

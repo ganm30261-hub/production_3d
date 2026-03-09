@@ -12,3 +12,4 @@ runs/
 Thumbs.db
 .vscode/
 .idea/ 
+"*.exe" 

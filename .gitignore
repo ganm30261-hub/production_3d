@@ -11,6 +11,6 @@ runs/
 .DS_Store
 Thumbs.db
 .vscode/
-.idea/ 
-"*.exe" 
-
+.idea/
+*.exe
+git

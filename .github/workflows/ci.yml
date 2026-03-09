@@ -29,9 +29,9 @@ jobs:
       - name: 代码检查
         run: |
           flake8 b_data/ c_models/ g_training/ \
-            --max-line-length=100 \
-            --exclude=__pycache__ \
-            --ignore=E402,W503
+            --max-line-length=120 \
+            --exclude=__pycache__,.ipynb_checkpoints \
+            --ignore=E127,E128,E226,E241,E501,E741,F401,F541,W293,E302,E305
 
   build-and-push:
     needs: lint

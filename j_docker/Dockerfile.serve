@@ -1,0 +1,17 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+RUN pip install streamlit==1.28.0 \
+    google-cloud-aiplatform==1.38.0 \
+    python-docx==0.8.11 \
+    pandas==2.0.0
+
+COPY i_webapp/ ./i_webapp/
+
+EXPOSE 8080
+
+CMD ["streamlit", "run", "i_webapp/report_app.py", \
+     "--server.port=8080", \
+     "--server.address=0.0.0.0", \
+     "--server.headless=true"]

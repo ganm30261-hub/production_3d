@@ -1,0 +1,25 @@
+# requirements.txt
+# 生产部署依赖（Vast.ai GPU 训练 + GCP Cloud Run 推理）
+
+# ── 深度学习框架 ──
+torch>=2.1.0
+torchvision>=0.16.0
+
+# ── 图像处理 ──
+opencv-python-headless>=4.8.0   # 无显示器环境用 headless 版
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# ── GCS ──
+google-cloud-storage>=2.10.0
+gcsfs>=2023.9.0
+
+# ── MLflow 实验追踪 ──
+mlflow>=2.8.0
+
+# ── 并发 / 工具 ──
+tqdm>=4.66.0
+
+# ── CubiCasa5k 解析（需从源码安装）──
+# git+https://github.com/CubiCasa/CubiCasa5k.git
+# 或在 Docker 里 COPY 进去后 pip install -e .

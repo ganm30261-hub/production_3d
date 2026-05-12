@@ -1,0 +1,14 @@
+artifact_uri: file:///workspace/production_3d/mlruns/625660004402776397/9ce8e1fb2d9b41e98906ab5cc0ae0446/artifacts
+end_time: 1778561153856
+entry_point_name: ''
+experiment_id: '625660004402776397'
+lifecycle_stage: active
+run_id: 9ce8e1fb2d9b41e98906ab5cc0ae0446
+run_name: hq_arch_0512_0423
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778559822565
+status: 4
+tags: []
+user_id: root

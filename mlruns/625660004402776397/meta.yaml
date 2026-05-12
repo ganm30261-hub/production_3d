@@ -1,0 +1,8 @@
+artifact_location: file:///workspace/production_3d/mlruns/625660004402776397
+creation_time: 1778558400059
+experiment_id: '625660004402776397'
+last_update_time: 1778558400059
+lifecycle_stage: active
+name: dinov2_lora_hq_arch
+trace_location: null
+workspace: default

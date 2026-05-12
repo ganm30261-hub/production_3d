@@ -1,0 +1,8 @@
+artifact_location: file:///workspace/production_3d/mlruns/378477982491115702
+creation_time: 1778561983499
+experiment_id: '378477982491115702'
+last_update_time: 1778561983499
+lifecycle_stage: active
+name: dinov2_lora_floorplan
+trace_location: null
+workspace: default

@@ -1,0 +1,8 @@
+artifact_location: file:///workspace/production_3d/mlruns/826462887910370220
+creation_time: 1778508322491
+experiment_id: '826462887910370220'
+last_update_time: 1778508322491
+lifecycle_stage: active
+name: floorplan_paper_method
+trace_location: null
+workspace: default

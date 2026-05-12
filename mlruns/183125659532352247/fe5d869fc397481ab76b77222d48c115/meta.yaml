@@ -1,0 +1,14 @@
+artifact_uri: file:///workspace/production_3d/mlruns/183125659532352247/fe5d869fc397481ab76b77222d48c115/artifacts
+end_time: 1778562574028
+entry_point_name: ''
+experiment_id: '183125659532352247'
+lifecycle_stage: active
+run_id: fe5d869fc397481ab76b77222d48c115
+run_name: combined_ep50_bs4_lr1e-4_0512_0448
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778561315341
+status: 4
+tags: []
+user_id: root

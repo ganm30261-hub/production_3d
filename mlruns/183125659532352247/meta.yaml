@@ -1,0 +1,8 @@
+artifact_location: file:///workspace/production_3d/mlruns/183125659532352247
+creation_time: 1778561315298
+experiment_id: '183125659532352247'
+last_update_time: 1778561315298
+lifecycle_stage: active
+name: floorplan_resnet50
+trace_location: null
+workspace: default

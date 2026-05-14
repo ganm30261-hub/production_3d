@@ -103,7 +103,7 @@ def run_inference(
         det_labels = np.zeros(0,      dtype=np.int64)
 
     logger.info(
-        f'run_inference 完成 '
+        f'run_inference 完成  '
         f'wall%={initial_mask.mean() * 100:.1f}%  '
         f'det_boxes={len(det_boxes)}'
     )

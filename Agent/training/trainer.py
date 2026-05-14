@@ -144,8 +144,13 @@ class LoRACheckpointManager:
                 old_path.unlink()
                 logger.info(f'  [ckpt] 淘汰: {old_path.name}')
 
-        rank = next(i + 1 for i, (_, p) in enumerate(self.scores) if p == path)
-        logger.info(f'  [ckpt] 保存: {path.name}  (Top-{self.save_top_k} 第{rank}位)')
+        # 检查当前 checkpoint 是否还在 Top-K 内
+        in_topk = any(p == path for _, p in self.scores)
+        if in_topk:
+            rank = next(i + 1 for i, (_, p) in enumerate(self.scores) if p == path)
+            logger.info(f'  [ckpt] 保存: {path.name}  (Top-{self.save_top_k} 第{rank}位)')
+        else:
+            logger.info(f'  [ckpt] 已淘汰（不在 Top-{self.save_top_k}）: {path.name}')
 
     def save_best(
         self,

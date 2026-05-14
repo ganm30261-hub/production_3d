@@ -1,0 +1,85 @@
+{
+  "image_path": "/tmp/infer_test_img/10191_F1_preprocessed.png",
+  "image_wh": [
+    1390,
+    854
+  ],
+  "wall_boxes": [
+    {
+      "bbox": [
+        0,
+        0,
+        1390,
+        10
+      ],
+      "orientation": "horizontal",
+      "confidence": 1.0
+    },
+    {
+      "bbox": [
+        0,
+        844,
+        1390,
+        854
+      ],
+      "orientation": "horizontal",
+      "confidence": 1.0
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        10,
+        854
+      ],
+      "orientation": "vertical",
+      "confidence": 1.0
+    },
+    {
+      "bbox": [
+        1380,
+        0,
+        1390,
+        854
+      ],
+      "orientation": "vertical",
+      "confidence": 1.0
+    }
+  ],
+  "openings": [
+    {
+      "type": "door",
+      "bbox": [
+        665,
+        0,
+        725,
+        10
+      ],
+      "wall_side": "north",
+      "estimated_width_m": null,
+      "confidence": 1.0
+    },
+    {
+      "type": "window",
+      "bbox": [
+        0,
+        284,
+        10,
+        344
+      ],
+      "wall_side": "west",
+      "estimated_width_m": null,
+      "confidence": 1.0
+    }
+  ],
+  "n_rooms": 1,
+  "floor_area_m2": 474.8,
+  "svg_path": null,
+  "meta_path": null,
+  "eval_scores": {
+    "iou_pixel": 0.0,
+    "s_total": 0.0,
+    "note": "mock"
+  },
+  "source": "mock"
+}

@@ -1,0 +1,15 @@
+{
+  "trace_id": "74e9f1a8-f5f",
+  "image_path": "/tmp/infer_test_img/10191_F1_preprocessed.png",
+  "stage": "init",
+  "retry_count": {},
+  "max_retries": 3,
+  "stage_history": [],
+  "outputs": {
+    "trace_log": "/tmp/trace_logs/74e9f1a8-f5f_trace.jsonl"
+  },
+  "warnings": [],
+  "created_at": "2026-05-13T10:35:26Z",
+  "updated_at": "2026-05-13T10:35:26Z",
+  "metadata": {}
+}

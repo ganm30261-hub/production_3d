@@ -40,6 +40,7 @@ for d in [CKPT_DIR, PSEUDO_OUT_DIR, MLFLOW_DIR]:
 
 sys.path.insert(0, PROJECT_ROOT)
 sys.path.insert(0, CUBICASA_ROOT)
+sys.path.insert(0, '/workspace/production_3d/Agent/postfile')
 
 # ══════════════════════════════════════════════════════════════
 # Logger + Device（全局单例，其他模块从这里 import）

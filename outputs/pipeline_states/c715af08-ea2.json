@@ -1,0 +1,32 @@
+{
+  "trace_id": "c715af08-ea2",
+  "image_path": "/tmp/test.png",
+  "stage": "labeled",
+  "retry_count": {},
+  "max_retries": 3,
+  "stage_history": [
+    {
+      "from": "init",
+      "to": "labeling",
+      "result": "success",
+      "metrics": {},
+      "failure_reason": null,
+      "elapsed_s": 0.0,
+      "timestamp": "2026-05-13T09:41:59Z"
+    },
+    {
+      "from": "labeling",
+      "to": "labeled",
+      "result": "success",
+      "metrics": {},
+      "failure_reason": null,
+      "elapsed_s": 0.0,
+      "timestamp": "2026-05-13T09:41:59Z"
+    }
+  ],
+  "outputs": {},
+  "warnings": [],
+  "created_at": "2026-05-13T09:41:59Z",
+  "updated_at": "2026-05-13T09:41:59Z",
+  "metadata": {}
+}

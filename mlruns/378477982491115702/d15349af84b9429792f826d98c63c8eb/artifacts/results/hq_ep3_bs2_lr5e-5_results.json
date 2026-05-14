@@ -1,0 +1,18 @@
+{
+  "model": "DINOv2_ViT-L_LoRA",
+  "dataset_version": "hq",
+  "train_files": [
+    "train_hq.txt"
+  ],
+  "best_val_iou": 0.21826094260009435,
+  "epochs_trained": 3,
+  "start_epoch": 1,
+  "batch_size": 2,
+  "learning_rate": 5e-05,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "best_ckpt_name": "hq_bs2_lr5e-5_best.pth",
+  "training_date": "2026-05-13 06:50:19",
+  "mlflow_run_id": "d15349af84b9429792f826d98c63c8eb",
+  "gcs_dir": "gs://yalingdata/models/dinov2_lora/hq/hq_ep3_bs2_lr5e-5/"
+}

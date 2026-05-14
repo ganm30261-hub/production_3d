@@ -1,0 +1,10 @@
+{
+  "hq_ep3_bs2_lr5e-5": {
+    "dataset_version": "hq",
+    "gcs_dir": "gs://yalingdata/models/dinov2_lora/hq/hq_ep3_bs2_lr5e-5/",
+    "best_ckpt": "hq_bs2_lr5e-5_best.pth",
+    "best_val_iou": 0.2183,
+    "mlflow_run_id": "d15349af84b9429792f826d98c63c8eb",
+    "training_date": "2026-05-13 06:50:19"
+  }
+}

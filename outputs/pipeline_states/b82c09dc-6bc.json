@@ -1,0 +1,25 @@
+{
+  "trace_id": "b82c09dc-6bc",
+  "image_path": "/tmp/infer_test_img/10191_F1_preprocessed.png",
+  "stage": "failed",
+  "retry_count": {},
+  "max_retries": 3,
+  "stage_history": [
+    {
+      "from": "init",
+      "to": "failed",
+      "result": "fail",
+      "metrics": {},
+      "failure_reason": "非法状态转移: Stage.INIT → Stage.LABELED  允许: ['labeling', 'failed']",
+      "elapsed_s": 0.0,
+      "timestamp": "2026-05-13T10:37:21Z"
+    }
+  ],
+  "outputs": {
+    "trace_log": "/tmp/trace_logs/b82c09dc-6bc_trace.jsonl"
+  },
+  "warnings": [],
+  "created_at": "2026-05-13T10:37:21Z",
+  "updated_at": "2026-05-13T10:37:21Z",
+  "metadata": {}
+}
